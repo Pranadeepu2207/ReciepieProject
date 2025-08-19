@@ -4,12 +4,14 @@ import { useState, useCallback } from "react";
 
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
-import { View, Text, Image, ScrollView, StyleSheet, TouchableOpacity, RefreshControl, Pressable } from "react-native";
+import { View, Text, Image, ScrollView, StyleSheet, TouchableOpacity, RefreshControl, Pressable, useWindowDimensions } from "react-native";
 
 const ReciepieDesc = ({ route }) => {
     const { reciepie } = route.params
     const [showIngredients, setShowIngredients] = useState(false)
     const [refreshing, setRefreshing] = useState(false)
+
+    // const { height, width, scale, fontScale } = useWindowDimensions()
 
     const onRefresh = useCallback(() => {
         setRefreshing(true)
@@ -51,6 +53,13 @@ const ReciepieDesc = ({ route }) => {
                             ))}
                         </View>
                     </View>
+                    {/* window dimensions */}
+
+
+                    {/* <Text>Device width: {width}</Text>
+                    <Text>Device height: {height}</Text>
+                    <Text>{scale}</Text>
+                    <Text>{fontScale}</Text> */}
                 </ScrollView>
             </SafeAreaView>
         </SafeAreaProvider >
