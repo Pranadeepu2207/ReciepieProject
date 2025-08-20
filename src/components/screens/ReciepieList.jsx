@@ -2,7 +2,7 @@
 import React from 'react'
 
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context'
-import { View, Text, FlatList, TouchableOpacity, Image, StyleSheet} from 'react-native'
+import { View, Text, FlatList, TouchableOpacity, Image, StyleSheet } from 'react-native'
 
 import { reciepies } from '../data/ReciepieData'
 

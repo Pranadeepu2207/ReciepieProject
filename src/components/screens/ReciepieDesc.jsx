@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
+// eslint-disable-next-line no-unused-vars
 import { View, Text, Image, ScrollView, StyleSheet, TouchableOpacity, RefreshControl, Pressable, useWindowDimensions } from "react-native";
 
 const ReciepieDesc = ({ route }) => {
